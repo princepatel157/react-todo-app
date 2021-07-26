@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-body {
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(141, 89, 133);
+  /* background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.main-frame {
+  margin-top: -100px;
+  height: 100vh;
+  width: 55%;
+  /* border: 2px solid red; */
+}
+
+.main-heading {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.add-todo {
+  width: 100%;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.add-todo .input-field {
+  height: 35px;
+  width: 85%;
+  padding-left: 5px;
+  border: 0;
+}
+
+.add-todo .add-btn {
+  width: 15%;
+  height: 35px;
+  color: white;
+  background-color: rgb(19, 117, 52);
+  border: 0;
+}
+.add-btn:hover {
+  cursor: pointer;
+}
