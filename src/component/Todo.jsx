@@ -8,8 +8,12 @@ const Todo = () => {
   const [item, setItem] = useState([]);
 
   const addItem = () => {
-    setItem([...item, todo]);
-    setTodo("");
+    if (todo) {
+      setItem([...item, todo]);
+      setTodo("");
+    } else {
+      window.alert("Enter Todo First");
+    }
   };
 
   const editItem = (id) => {
