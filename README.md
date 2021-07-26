@@ -2,4 +2,4 @@
 
 top elemment done
 
-![header screenshot](/ss/top.jpg)
+![header screenshot](ss/top.jpg)
