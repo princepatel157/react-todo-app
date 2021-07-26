@@ -26,7 +26,7 @@ const Todo = () => {
 
   const deleteItem = (id) => {
     const updatedList = item.filter((item, i) => {
-      return id != i;
+      return id !== i;
     });
     setItem(updatedList);
   };
