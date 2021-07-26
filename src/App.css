@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .bg-body {
@@ -26,8 +27,16 @@
 .main-frame {
   margin-top: -100px;
   height: 100vh;
-  width: 55%;
+  width: 60%;
   /* border: 2px solid red; */
+}
+
+@media (min-width: 800px) {
+  .main-frame {
+    margin-top: -100px;
+    height: 100vh;
+    width: 50%;
+  }
 }
 
 .main-heading {
@@ -40,7 +49,8 @@
 
 .add-todo {
   width: 100%;
-  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(27, 26, 26, 0.2);
+  margin-bottom: 30px;
 }
 .add-todo .input-field {
   height: 35px;
@@ -57,5 +67,41 @@
   border: 0;
 }
 .add-btn:hover {
+  cursor: pointer;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(65, 64, 64, 0.2);
+}
+
+.list-item {
+  height: 35px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.todo-list .edit-item {
+  width: 10%;
+  height: 35px;
+  color: white;
+  background-color: rgb(230, 202, 45);
+  border: 0;
+}
+.todo-list .delete-item {
+  width: 10%;
+  height: 35px;
+  color: white;
+  background-color: rgb(240, 44, 37);
+  border: 0;
+}
+
+.delete-item:hover {
+  cursor: pointer;
+}
+.edit-item:hover {
   cursor: pointer;
 }
