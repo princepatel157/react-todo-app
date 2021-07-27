@@ -22,6 +22,8 @@
   background-size: 100%;
   background-blend-mode: multiply;
   background-position: center;
+  /* background-size: inherit; */
+  background-size: cover;
 }
 
 .main-frame {
